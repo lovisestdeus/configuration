@@ -4,6 +4,7 @@ set encoding=UTF-8
 " Importing other configs
 source $HOME/.vim_config/plugins.vim
 source $HOME/.vim_config/bindings.vim
+source $HOME/.vim_config/lightline.vim
 
 " Colors
 syntax on   " Enable syntax highlighting
@@ -13,6 +14,8 @@ syntax on   " Enable syntax highlighting
 
 set hidden
 set showtabline=2
+
+set laststatus=2
 
 " Show line numbers and make current line bold
 set number

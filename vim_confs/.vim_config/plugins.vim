@@ -11,6 +11,8 @@ Plug 'preservim/nerdtree' |
   \ Plug 'ryanoasis/vim-devicons' |
   \ Plug 'jistr/vim-nerdtree-tabs'
 
+ Plug 'itchyny/lightline.vim'
+
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 
 Plug 'yggdroot/indentline'
@@ -21,6 +23,8 @@ Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'dikiaap/minimalist'
 
 call plug#end()
+
+let g:lightline = { 'colorscheme': 'challenger_deep'}
 
 let g:indentline_color_term = 239
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
