@@ -27,9 +27,9 @@ set ignorecase
 set smartcase
 set mouse=a
 
-set nobackup    " Disables backup files - recommanded by Coc
-set nowritebackup   " Disables backup files - recommanded by Coc
-set undofile
+"set nobackup    " Disables backup files - recommanded by Coc
+"set nowritebackup   " Disables backup files - recommanded by Coc
+"set undofile
 
 set clipboard=unnamedplus
 set splitright
@@ -46,3 +46,10 @@ set number
 set hlsearch
 set ruler
 highlight Comment ctermfg=green
+
+" From github:rexim/dotfiles
+filetype plugin indent on
+set guioptions-=m
+set guioptions-=T
+set noesckeys
+set relativenumber
