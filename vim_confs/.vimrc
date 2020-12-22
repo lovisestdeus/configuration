@@ -9,8 +9,7 @@ source $HOME/.vim_config/lightline.vim
 " Colors
 syntax on   " Enable syntax highlighting
 
-":colo minimalist 
-:colo challenger_deep 
+:colo minimalist " or you can also select 'challenger_deep'
 
 set hidden
 set showtabline=2
