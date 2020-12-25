@@ -22,6 +22,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'dikiaap/minimalist'
 
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 let g:lightline = { 'colorscheme': 'challenger_deep'}
@@ -33,3 +35,27 @@ let g:goyo_width = 100
 
 " For Accidental quick saves. I sometimes press "w" while pressing shift...
 command! -nargs=* W w
+
+" vim-devicons settings
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:DevIconsEnableFolderExtensionPatternMatching = 1
+
+let g:DevIconsDefaultFolderOpenSymbol=''
+let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol=''
+
+" Custom icons for file extensions
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['js'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['ts'] = 'ﯤ'
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['json'] = 'ﬥ'
+"
+let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols = {} " needed
+let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['.test.ts'] = 'ﭧ'
+" Custom icons for specific filenames
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = {} " needed
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['ormconfig.js'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.env'] = 'ﭩ'
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.editorconfig'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.npmrc'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['src'] = ''
