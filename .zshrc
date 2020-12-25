@@ -1,3 +1,6 @@
+ZSH_THEME="nicoulaj"
+alias top="htop"
+alias vi="vim"
 if which tmux 2>&1 >/dev/null; then
   if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
     tmux attach -t hack || tmux new -s hack; exit
