@@ -11,6 +11,10 @@ syntax on   " Enable syntax highlighting
 
 :colo minimalist " or you can also select 'challenger_deep'
 
+hi Normal guibg=NONE ctermbg=NONE ctermfg=white 
+highligh clear LineNr
+highligh clear SignColumn 
+
 set hidden
 set showtabline=2
 
